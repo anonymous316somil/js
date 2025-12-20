@@ -18,11 +18,11 @@ let userEmail; // by default initialized with undefined
 
 const id = Symbol("12345");
 const anotherId = Symbol("12345");
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bigNumber =
   45235432523525243532453456434564363453453242423423534645643534234234363453475487567n;
-console.log(bigNumber);
+// console.log(bigNumber);
 
 // *******************Non-Primitive DataTypes******************* -> call by reference
 // 1. Array
@@ -30,23 +30,47 @@ console.log(bigNumber);
 // 3. Functions
 
 const heroes = ["shaktiman", "naagraj", "doga", "hanuman"];
-console.log(heroes);
+// console.log(heroes);
 
 const user = {
   name: "bob",
   age: 22,
   state: "Goa",
 };
-console.log(user);
+// console.log(user);
 
 const myFunction = function () {
   console.log("Hello World");
 };
 
-console.log(typeof myFunction);
-console.log(typeof heroes);
-console.log(typeof user);
+// console.log(typeof myFunction);
+// console.log(typeof heroes);
+// console.log(typeof user);
 
-console.log(typeof scoreValue);
-console.log(typeof bigNumber);
-console.log(typeof outsideTemp);
+// console.log(typeof scoreValue);
+// console.log(typeof bigNumber);
+// console.log(typeof outsideTemp);
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap(Non-Primitive) 
+
+let myYtName = "somildotcom"
+
+let anotherName = myYtName
+anotherName = "coffeedotcom"
+
+console.log(myYtName);
+console.log(anotherName);
+
+let user1 = {
+    email: "user1@google.com",
+    upi: "user1@ybl"
+}
+
+let user2 = user1
+
+user2.email = "user2@gmail.com"
+console.log(user1.email); 
+console.log(user2.email); 
