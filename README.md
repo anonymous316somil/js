@@ -9,6 +9,7 @@ A beginner-friendly collection of small JavaScript examples and exercises, organ
 - `03_basics/` — functions, scopes, and arrow function examples.
 - `04_control_flow/` — `if`/`else`, `switch`, and truthy/falsy examples.
 - `05_iterations/` — iteration examples using loops and iterators.
+- `06_dom/` - document object model. 
 
 Files are named to group related lessons; open any `.js` file to read the example and run it with Node.
 
